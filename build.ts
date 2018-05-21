@@ -1,4 +1,4 @@
-import * as ng from '@angular/compiler-cli';
+import * as ng from '@angular/compiler-cli/src/ngtools_api2';
 import * as ts from 'typescript';
 import * as path from 'path';
 
@@ -27,6 +27,5 @@ const program = ng.createProgram({
 });
 
 
-const result = program.emit();
-console.log(program.getNgSemanticDiagnostics())
+const result = program.emit({});
 console.log(ng.formatDiagnostics(result.diagnostics));

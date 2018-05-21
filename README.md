@@ -1,9 +1,9 @@
 
-# Angular Issue 24010
+# Angular Issue 24024
 
-I noticed that the compiler host method `moduleNameToFileName` is being invoked for modules which are not being imported or exported, and is not invoked with modules that are being imported.
+When using `program.emit` in `ngtools api2` and having a clear typescript error, the error is no emitted. It is only emitted when using `noEmitOnError` flag, however it seems that the `noEmitOnError` is not being honoured as files are still being outputted.
 
-This is to illustrate issue https://github.com/angular/angular/issues/24010
+This is to illustrate issue https://github.com/angular/angular/issues/24024
 
 To view the issue:
 ```

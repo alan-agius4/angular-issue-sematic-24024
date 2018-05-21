@@ -1,2 +1,1 @@
-import * as shared from 'shared';
-export { shared };
+export const x = { invalid: true };
